@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<package version="3.0" xmlns="http://www.idpf.org/2007/opf" unique-identifier="BookId">
+    <metadata xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:opf="http://www.idpf.org/2007/opf">
+        <dc:title>Somnium Scipionis</dc:title>
+        <dc:language>lat</dc:language>
+        <dc:identifier id="BookId">urn:isbn:123456789X</dc:identifier>
+        <dc:creator id="author">Marcus Tullius Cicero</dc:creator>
+        <!-- <meta refines="#author" property="file-as">Cicero, Marcus Tullius"</meta> -->
+        <meta property="dcterms:modified">2023-12-28T00:00:00Z</meta>
+    </metadata>
+
+    <manifest>
+        <item id="chapter1" href="chapter1.xhtml" media-type="application/xhtml+xml"/>
+        <item id="appendix" href="appendix.xhtml" media-type="application/xhtml+xml"/>
+        <item id="glossary" href="glossary.xhtml" properties="glossary" media-type="application/xhtml+xml"/>
+        <item id="searchkm" properties="search-key-map glossary" href="glossary_search_map.xml"
+            media-type="application/vnd.epub.search-key-map+xml"/>
+        <item id="stylesheet" href="css/main.css" media-type="text/css"/>
+        <item id="toc" properties="nav" href="toc.xhtml" media-type="application/xhtml+xml"/>
+    </manifest>
+    
+    <spine>
+        <itemref idref="chapter1"/>
+        <itemref idref="appendix"/>
+        <itemref idref="toc"/>
+        <itemref idref="glossary"/>
+    </spine>
+
+    <guide>
+        <reference type="loi" title="List of illustrations" href="appendix.xhtml#figures" />
+    </guide>
+</package>    

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<search-key-map xmlns="http://www.idpf.org/2007/ops" xml:lang="lat">
+    <search-key-group href="glossary.xhtml#masinissa">
+        <match value="masinissa">
+            <value value="masinissam"/>
+            <value value="masinissae"/>
+        </match>
+    </search-key-group>
+</search-key-map>
